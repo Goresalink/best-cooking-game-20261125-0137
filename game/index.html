@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Warung Kilat — Game Masak Cepat</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><text y='13'>🍳</text></svg>">
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: #2b1a0c;
+    min-height: 100%;
+  }
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Trebuchet MS", Verdana, sans-serif;
+  }
+  #wrap {
+    width: min(1280px, 100vw);
+    line-height: 0;
+  }
+  canvas {
+    width: 100%;
+    height: auto;
+    display: block;
+    cursor: pointer;
+    background: #ffe8c2;
+  }
+  #help {
+    line-height: 1.5;
+    color: #ffe8c2;
+    text-align: center;
+    font-size: 14px;
+    padding: 10px 16px 16px;
+  }
+  #help b { color: #f2c14e; }
+</style>
+</head>
+<body>
+<div id="wrap">
+  <canvas id="game" width="1280" height="800"></canvas>
+  <div id="help">
+    <b>Warung Kilat</b> — klik bahan di konter (atau tekan <b>1–8</b>), rakit hidangan di piring,
+    tekan <b>C</b> untuk memasak, klik piring matang lalu klik tiket pesanan untuk menyajikan.
+    <b>P</b> jeda, <b>M</b> suara.
+  </div>
+</div>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
